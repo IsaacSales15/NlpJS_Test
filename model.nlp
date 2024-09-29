@@ -1,0 +1,2384 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "pt"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "language": "pt",
+          "useNoneFeature": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "timeout": 120000
+          }
+        },
+        "language": "pt",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "bom,com,dia,esta,voc": {
+            "domain": "default",
+            "intent": "user.custom_0"
+          },
+          "bom,dia": {
+            "domain": "default",
+            "intent": "user.custom_0"
+          },
+          "bem,oi,tud": {
+            "domain": "default",
+            "intent": "user.custom_0"
+          },
+          "com,esta,ola,voc": {
+            "domain": "default",
+            "intent": "user.custom_0"
+          },
+          "estou,eu,tamb": {
+            "domain": "default",
+            "intent": "user.custom_1"
+          },
+          "bem,estou,tamb": {
+            "domain": "default",
+            "intent": "user.custom_1"
+          },
+          "estou,otim": {
+            "domain": "default",
+            "intent": "user.custom_1"
+          },
+          "a,cor,e,favorit,qual,sua": {
+            "domain": "default",
+            "intent": "user.custom_2"
+          },
+          "cor,gost,que,voc": {
+            "domain": "default",
+            "intent": "user.custom_2"
+          },
+          "cor,favorit,tem,uma": {
+            "domain": "default",
+            "intent": "user.custom_2"
+          },
+          "acha,artificial,inteligenc,o,que,sobr,voc": {
+            "domain": "default",
+            "intent": "user.custom_3"
+          },
+          "ia,opinia,qual,sobr,sua": {
+            "domain": "default",
+            "intent": "user.custom_3"
+          },
+          "artificial,da,inteligenc,o,pens,que": {
+            "domain": "default",
+            "intent": "user.custom_3"
+          },
+          "a,a,e,mais,o,par,qual,respost,tud,univers,vid": {
+            "domain": "default",
+            "intent": "user.custom_4"
+          },
+          "a,do,qual,respost,univers": {
+            "domain": "default",
+            "intent": "user.custom_4"
+          },
+          "da,o,signific,vid": {
+            "domain": "default",
+            "intent": "user.custom_4"
+          },
+          "nom,o,qual,seu": {
+            "domain": "default",
+            "intent": "user.custom_5"
+          },
+          "cham,com,se,voc": {
+            "domain": "default",
+            "intent": "user.custom_5"
+          },
+          "e,quem,voc": {
+            "domain": "default",
+            "intent": "user.custom_5"
+          },
+          "e,favorit,film,o,qual,seu": {
+            "domain": "default",
+            "intent": "user.custom_6"
+          },
+          "de,film,gost,voc": {
+            "domain": "default",
+            "intent": "user.custom_6"
+          },
+          "algum,film,prefer,tem": {
+            "domain": "default",
+            "intent": "user.custom_6"
+          },
+          "de,faz,gost,o,que,voc": {
+            "domain": "default",
+            "intent": "user.custom_7"
+          },
+          "algum,hobby,tem": {
+            "domain": "default",
+            "intent": "user.custom_7"
+          },
+          "faz,hor,nas,o,que,vag,voc": {
+            "domain": "default",
+            "intent": "user.custom_7"
+          },
+          "de,gost,music,voc": {
+            "domain": "default",
+            "intent": "user.custom_8"
+          },
+          "de,music,ouv,qual,tip,voc": {
+            "domain": "default",
+            "intent": "user.custom_8"
+          },
+          "algum,gost,musical,tem,voc": {
+            "domain": "default",
+            "intent": "user.custom_8"
+          },
+          "animal,favorit,qual,seu": {
+            "domain": "default",
+            "intent": "user.custom_9"
+          },
+          "anim,de,gost,voc": {
+            "domain": "default",
+            "intent": "user.custom_9"
+          },
+          "animal,prefer,tem,um": {
+            "domain": "default",
+            "intent": "user.custom_9"
+          },
+          "amig,tem,voc": {
+            "domain": "default",
+            "intent": "user.custom_10"
+          },
+          "algu,amig,de,e,voc": {
+            "domain": "default",
+            "intent": "user.custom_10"
+          },
+          "amizad,faz,voc": {
+            "domain": "default",
+            "intent": "user.custom_10"
+          },
+          "acredit,aliens,em,voc": {
+            "domain": "default",
+            "intent": "user.custom_11"
+          },
+          "acha,extraterrestr,o,que,sobr,voc": {
+            "domain": "default",
+            "intent": "user.custom_11"
+          },
+          "acredit,da,em,for,terr,vid,voc": {
+            "domain": "default",
+            "intent": "user.custom_11"
+          },
+          "program,sab,voc": {
+            "domain": "default",
+            "intent": "user.custom_12"
+          },
+          "program,voc": {
+            "domain": "default",
+            "intent": "user.custom_12"
+          },
+          "de,entend,programaca,voc": {
+            "domain": "default",
+            "intent": "user.custom_12"
+          },
+          "esport,favorit,qual,seu": {
+            "domain": "default",
+            "intent": "user.custom_13"
+          },
+          "de,esport,gost,voc": {
+            "domain": "default",
+            "intent": "user.custom_13"
+          },
+          "esport,prefer,tem,um": {
+            "domain": "default",
+            "intent": "user.custom_13"
+          },
+          "algum,conhec,piad,voc": {
+            "domain": "default",
+            "intent": "user.custom_14"
+          },
+          "cont,me,piad,uma": {
+            "domain": "default",
+            "intent": "user.custom_14"
+          },
+          "cont,piad,sab,voc": {
+            "domain": "default",
+            "intent": "user.custom_14"
+          }
+        },
+        "intentDict": {
+          "user.custom_0": "default",
+          "user.custom_1": "default",
+          "user.custom_2": "default",
+          "user.custom_3": "default",
+          "user.custom_4": "default",
+          "user.custom_5": "default",
+          "user.custom_6": "default",
+          "user.custom_7": "default",
+          "user.custom_8": "default",
+          "user.custom_9": "default",
+          "user.custom_10": "default",
+          "user.custom_11": "default",
+          "user.custom_12": "default",
+          "user.custom_13": "default",
+          "user.custom_14": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "pt",
+              "useNoneFeature": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "timeout": 120000
+              }
+            },
+            "language": "pt",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "user.custom_0",
+                "tokens": [
+                  "bom",
+                  "dia",
+                  "com",
+                  "voc",
+                  "esta"
+                ]
+              },
+              {
+                "intent": "user.custom_0",
+                "tokens": [
+                  "bom",
+                  "dia"
+                ]
+              },
+              {
+                "intent": "user.custom_0",
+                "tokens": [
+                  "oi",
+                  "tud",
+                  "bem"
+                ]
+              },
+              {
+                "intent": "user.custom_0",
+                "tokens": [
+                  "ola",
+                  "com",
+                  "voc",
+                  "esta"
+                ]
+              },
+              {
+                "intent": "user.custom_1",
+                "tokens": [
+                  "eu",
+                  "tamb",
+                  "estou"
+                ]
+              },
+              {
+                "intent": "user.custom_1",
+                "tokens": [
+                  "estou",
+                  "bem",
+                  "tamb"
+                ]
+              },
+              {
+                "intent": "user.custom_1",
+                "tokens": [
+                  "estou",
+                  "otim"
+                ]
+              },
+              {
+                "intent": "user.custom_2",
+                "tokens": [
+                  "qual",
+                  "e",
+                  "a",
+                  "sua",
+                  "cor",
+                  "favorit"
+                ]
+              },
+              {
+                "intent": "user.custom_2",
+                "tokens": [
+                  "que",
+                  "cor",
+                  "voc",
+                  "gost"
+                ]
+              },
+              {
+                "intent": "user.custom_2",
+                "tokens": [
+                  "tem",
+                  "uma",
+                  "cor",
+                  "favorit"
+                ]
+              },
+              {
+                "intent": "user.custom_3",
+                "tokens": [
+                  "o",
+                  "que",
+                  "voc",
+                  "acha",
+                  "sobr",
+                  "inteligenc",
+                  "artificial"
+                ]
+              },
+              {
+                "intent": "user.custom_3",
+                "tokens": [
+                  "qual",
+                  "sua",
+                  "opinia",
+                  "sobr",
+                  "ia"
+                ]
+              },
+              {
+                "intent": "user.custom_3",
+                "tokens": [
+                  "o",
+                  "que",
+                  "pens",
+                  "da",
+                  "inteligenc",
+                  "artificial"
+                ]
+              },
+              {
+                "intent": "user.custom_4",
+                "tokens": [
+                  "qual",
+                  "a",
+                  "respost",
+                  "par",
+                  "a",
+                  "vid",
+                  "o",
+                  "univers",
+                  "e",
+                  "tud",
+                  "mais"
+                ]
+              },
+              {
+                "intent": "user.custom_4",
+                "tokens": [
+                  "qual",
+                  "a",
+                  "respost",
+                  "do",
+                  "univers"
+                ]
+              },
+              {
+                "intent": "user.custom_4",
+                "tokens": [
+                  "o",
+                  "signific",
+                  "da",
+                  "vid"
+                ]
+              },
+              {
+                "intent": "user.custom_5",
+                "tokens": [
+                  "qual",
+                  "o",
+                  "seu",
+                  "nom"
+                ]
+              },
+              {
+                "intent": "user.custom_5",
+                "tokens": [
+                  "com",
+                  "voc",
+                  "se",
+                  "cham"
+                ]
+              },
+              {
+                "intent": "user.custom_5",
+                "tokens": [
+                  "quem",
+                  "e",
+                  "voc"
+                ]
+              },
+              {
+                "intent": "user.custom_6",
+                "tokens": [
+                  "qual",
+                  "e",
+                  "o",
+                  "seu",
+                  "film",
+                  "favorit"
+                ]
+              },
+              {
+                "intent": "user.custom_6",
+                "tokens": [
+                  "voc",
+                  "gost",
+                  "de",
+                  "film"
+                ]
+              },
+              {
+                "intent": "user.custom_6",
+                "tokens": [
+                  "tem",
+                  "algum",
+                  "film",
+                  "prefer"
+                ]
+              },
+              {
+                "intent": "user.custom_7",
+                "tokens": [
+                  "o",
+                  "que",
+                  "voc",
+                  "gost",
+                  "de",
+                  "faz"
+                ]
+              },
+              {
+                "intent": "user.custom_7",
+                "tokens": [
+                  "tem",
+                  "algum",
+                  "hobby"
+                ]
+              },
+              {
+                "intent": "user.custom_7",
+                "tokens": [
+                  "o",
+                  "que",
+                  "voc",
+                  "faz",
+                  "nas",
+                  "hor",
+                  "vag"
+                ]
+              },
+              {
+                "intent": "user.custom_8",
+                "tokens": [
+                  "voc",
+                  "gost",
+                  "de",
+                  "music"
+                ]
+              },
+              {
+                "intent": "user.custom_8",
+                "tokens": [
+                  "qual",
+                  "tip",
+                  "de",
+                  "music",
+                  "voc",
+                  "ouv"
+                ]
+              },
+              {
+                "intent": "user.custom_8",
+                "tokens": [
+                  "voc",
+                  "tem",
+                  "algum",
+                  "gost",
+                  "musical"
+                ]
+              },
+              {
+                "intent": "user.custom_9",
+                "tokens": [
+                  "qual",
+                  "seu",
+                  "animal",
+                  "favorit"
+                ]
+              },
+              {
+                "intent": "user.custom_9",
+                "tokens": [
+                  "voc",
+                  "gost",
+                  "de",
+                  "anim"
+                ]
+              },
+              {
+                "intent": "user.custom_9",
+                "tokens": [
+                  "tem",
+                  "um",
+                  "animal",
+                  "prefer"
+                ]
+              },
+              {
+                "intent": "user.custom_10",
+                "tokens": [
+                  "voc",
+                  "tem",
+                  "amig"
+                ]
+              },
+              {
+                "intent": "user.custom_10",
+                "tokens": [
+                  "voc",
+                  "e",
+                  "amig",
+                  "de",
+                  "algu"
+                ]
+              },
+              {
+                "intent": "user.custom_10",
+                "tokens": [
+                  "voc",
+                  "faz",
+                  "amizad"
+                ]
+              },
+              {
+                "intent": "user.custom_11",
+                "tokens": [
+                  "voc",
+                  "acredit",
+                  "em",
+                  "aliens"
+                ]
+              },
+              {
+                "intent": "user.custom_11",
+                "tokens": [
+                  "o",
+                  "que",
+                  "voc",
+                  "acha",
+                  "sobr",
+                  "extraterrestr"
+                ]
+              },
+              {
+                "intent": "user.custom_11",
+                "tokens": [
+                  "voc",
+                  "acredit",
+                  "em",
+                  "vid",
+                  "for",
+                  "da",
+                  "terr"
+                ]
+              },
+              {
+                "intent": "user.custom_12",
+                "tokens": [
+                  "voc",
+                  "sab",
+                  "program"
+                ]
+              },
+              {
+                "intent": "user.custom_12",
+                "tokens": [
+                  "voc",
+                  "program"
+                ]
+              },
+              {
+                "intent": "user.custom_12",
+                "tokens": [
+                  "voc",
+                  "entend",
+                  "de",
+                  "programaca"
+                ]
+              },
+              {
+                "intent": "user.custom_13",
+                "tokens": [
+                  "qual",
+                  "seu",
+                  "esport",
+                  "favorit"
+                ]
+              },
+              {
+                "intent": "user.custom_13",
+                "tokens": [
+                  "voc",
+                  "gost",
+                  "de",
+                  "esport"
+                ]
+              },
+              {
+                "intent": "user.custom_13",
+                "tokens": [
+                  "tem",
+                  "um",
+                  "esport",
+                  "prefer"
+                ]
+              },
+              {
+                "intent": "user.custom_14",
+                "tokens": [
+                  "voc",
+                  "conhec",
+                  "algum",
+                  "piad"
+                ]
+              },
+              {
+                "intent": "user.custom_14",
+                "tokens": [
+                  "me",
+                  "cont",
+                  "uma",
+                  "piad"
+                ]
+              },
+              {
+                "intent": "user.custom_14",
+                "tokens": [
+                  "voc",
+                  "sab",
+                  "cont",
+                  "piad"
+                ]
+              }
+            ],
+            "features": {
+              "bom": 2,
+              "dia": 2,
+              "com": 3,
+              "voc": 25,
+              "esta": 2,
+              "oi": 1,
+              "tud": 2,
+              "bem": 2,
+              "ola": 1,
+              "eu": 1,
+              "tamb": 2,
+              "estou": 3,
+              "otim": 1,
+              "qual": 9,
+              "e": 5,
+              "a": 4,
+              "sua": 2,
+              "cor": 3,
+              "favorit": 5,
+              "que": 6,
+              "gost": 7,
+              "tem": 7,
+              "uma": 2,
+              "o": 9,
+              "acha": 2,
+              "sobr": 3,
+              "inteligenc": 2,
+              "artificial": 2,
+              "opinia": 1,
+              "ia": 1,
+              "pens": 1,
+              "da": 3,
+              "respost": 2,
+              "par": 1,
+              "vid": 3,
+              "univers": 2,
+              "mais": 1,
+              "do": 1,
+              "signific": 1,
+              "seu": 4,
+              "nom": 1,
+              "se": 1,
+              "cham": 1,
+              "quem": 1,
+              "film": 3,
+              "de": 8,
+              "algum": 4,
+              "prefer": 3,
+              "faz": 3,
+              "hobby": 1,
+              "nas": 1,
+              "hor": 1,
+              "vag": 1,
+              "music": 2,
+              "tip": 1,
+              "ouv": 1,
+              "musical": 1,
+              "animal": 2,
+              "anim": 1,
+              "um": 2,
+              "amig": 2,
+              "algu": 1,
+              "amizad": 1,
+              "acredit": 2,
+              "em": 2,
+              "aliens": 1,
+              "extraterrestr": 1,
+              "for": 1,
+              "terr": 1,
+              "sab": 2,
+              "program": 2,
+              "entend": 1,
+              "programaca": 1,
+              "esport": 3,
+              "conhec": 1,
+              "piad": 3,
+              "me": 1,
+              "cont": 2
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "pt",
+                "useNoneFeature": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  79,
+                  16
+                ],
+                "layers": [
+                  {
+                    "bom": {},
+                    "dia": {},
+                    "com": {},
+                    "voc": {},
+                    "esta": {},
+                    "oi": {},
+                    "tud": {},
+                    "bem": {},
+                    "ola": {},
+                    "eu": {},
+                    "tamb": {},
+                    "estou": {},
+                    "otim": {},
+                    "qual": {},
+                    "e": {},
+                    "a": {},
+                    "sua": {},
+                    "cor": {},
+                    "favorit": {},
+                    "que": {},
+                    "gost": {},
+                    "tem": {},
+                    "uma": {},
+                    "o": {},
+                    "acha": {},
+                    "sobr": {},
+                    "inteligenc": {},
+                    "artificial": {},
+                    "opinia": {},
+                    "ia": {},
+                    "pens": {},
+                    "da": {},
+                    "respost": {},
+                    "par": {},
+                    "vid": {},
+                    "univers": {},
+                    "mais": {},
+                    "do": {},
+                    "signific": {},
+                    "seu": {},
+                    "nom": {},
+                    "se": {},
+                    "cham": {},
+                    "quem": {},
+                    "film": {},
+                    "de": {},
+                    "algum": {},
+                    "prefer": {},
+                    "faz": {},
+                    "hobby": {},
+                    "nas": {},
+                    "hor": {},
+                    "vag": {},
+                    "music": {},
+                    "tip": {},
+                    "ouv": {},
+                    "musical": {},
+                    "animal": {},
+                    "anim": {},
+                    "um": {},
+                    "amig": {},
+                    "algu": {},
+                    "amizad": {},
+                    "acredit": {},
+                    "em": {},
+                    "aliens": {},
+                    "extraterrestr": {},
+                    "for": {},
+                    "terr": {},
+                    "sab": {},
+                    "program": {},
+                    "entend": {},
+                    "programaca": {},
+                    "esport": {},
+                    "conhec": {},
+                    "piad": {},
+                    "me": {},
+                    "cont": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "user.custom_0": {
+                      "bias": 2.20640918,
+                      "weights": {
+                        "bom": 4.592429638,
+                        "dia": 4.592429638,
+                        "com": 1.333850265,
+                        "voc": -1.856923223,
+                        "esta": 2.817855597,
+                        "oi": 4.202410698,
+                        "tud": 3.794012785,
+                        "bem": 2.341209412,
+                        "ola": 7.438416004,
+                        "eu": -0.283340812,
+                        "tamb": -2.14454174,
+                        "estou": -2.404746294,
+                        "otim": -0.260204494,
+                        "qual": -1.118552446,
+                        "e": -0.934274554,
+                        "a": -0.63217175,
+                        "sua": -0.342863321,
+                        "cor": -0.771560907,
+                        "favorit": -0.552005291,
+                        "que": -0.759735107,
+                        "gost": -0.78138268,
+                        "tem": -1.187828302,
+                        "uma": -0.617217481,
+                        "o": -1.012041569,
+                        "acha": -0.294943303,
+                        "sobr": -0.452222347,
+                        "inteligenc": -0.313019663,
+                        "artificial": -0.313019663,
+                        "opinia": -0.157279029,
+                        "ia": -0.157279029,
+                        "pens": -0.018076377,
+                        "da": -0.282368124,
+                        "respost": -0.446587354,
+                        "par": -0.408397764,
+                        "vid": -0.672689617,
+                        "univers": -0.446587354,
+                        "mais": -0.408397764,
+                        "do": -0.038189601,
+                        "signific": -0.241174921,
+                        "seu": -0.276608765,
+                        "nom": -0.049449109,
+                        "se": -1.484005213,
+                        "cham": -1.484005213,
+                        "quem": -0.340292394,
+                        "film": -0.304778516,
+                        "de": -0.505101025,
+                        "algum": -0.596479952,
+                        "prefer": -0.434928149,
+                        "faz": -0.379663676,
+                        "hobby": -0.41477409,
+                        "music": -0.143462226,
+                        "tip": -0.052492872,
+                        "ouv": -0.052492872,
+                        "musical": -0.002198352,
+                        "animal": -0.280236036,
+                        "anim": -0.047076344,
+                        "um": -0.324572861,
+                        "amig": -0.196666822,
+                        "amizad": -0.379663676,
+                        "acredit": -0.283727944,
+                        "em": -0.283727944,
+                        "aliens": -0.260611027,
+                        "for": -0.023116885,
+                        "terr": -0.023116885,
+                        "sab": -0.285151124,
+                        "program": -0.636003733,
+                        "entend": -0.120139159,
+                        "programaca": -0.120139159,
+                        "esport": -0.271496475,
+                        "conhec": -0.069152042,
+                        "piad": -0.583417058,
+                        "me": -0.477956355,
+                        "cont": -0.51426506,
+                        "nonefeature": -1.929955721
+                      }
+                    },
+                    "user.custom_1": {
+                      "bias": 1.001416395,
+                      "weights": {
+                        "bom": -0.505030274,
+                        "dia": -0.505030274,
+                        "com": -0.142097011,
+                        "voc": -1.004275084,
+                        "oi": -1.038232327,
+                        "tud": -1.081910253,
+                        "bem": 1.049513578,
+                        "eu": 1.057486415,
+                        "tamb": 3.145231247,
+                        "estou": 7.308045864,
+                        "otim": 4.16281414,
+                        "qual": -0.611018419,
+                        "e": -0.299089849,
+                        "a": -0.313480794,
+                        "sua": -0.295972735,
+                        "cor": -0.442788541,
+                        "favorit": -0.363658965,
+                        "que": -0.34942323,
+                        "gost": -0.27683866,
+                        "tem": -0.644920886,
+                        "uma": -0.389940739,
+                        "o": -0.522039354,
+                        "acha": -0.107662372,
+                        "sobr": -0.251451731,
+                        "inteligenc": -0.205359817,
+                        "artificial": -0.205359817,
+                        "opinia": -0.143789366,
+                        "ia": -0.143789366,
+                        "pens": -0.097697444,
+                        "da": -0.281884551,
+                        "respost": -0.161297441,
+                        "par": -0.043678034,
+                        "vid": -0.22786513,
+                        "univers": -0.161297441,
+                        "mais": -0.043678034,
+                        "do": -0.117619403,
+                        "signific": -0.184187084,
+                        "seu": -0.153748304,
+                        "nom": -0.088814475,
+                        "se": -0.142097011,
+                        "cham": -0.142097011,
+                        "quem": -0.100492917,
+                        "film": -0.210497543,
+                        "de": -0.164632529,
+                        "algum": -0.327518016,
+                        "prefer": -0.304557592,
+                        "faz": -0.104593009,
+                        "hobby": -0.191627041,
+                        "music": -0.036865845,
+                        "animal": -0.154266343,
+                        "anim": -0.021302892,
+                        "um": -0.168666616,
+                        "amig": -0.004929961,
+                        "algu": -0.002735517,
+                        "amizad": -0.104593009,
+                        "acredit": -0.082302369,
+                        "em": -0.082302369,
+                        "aliens": -0.082302369,
+                        "sab": -0.076905057,
+                        "program": -0.156237304,
+                        "entend": -0.029121699,
+                        "programaca": -0.029121699,
+                        "esport": -0.07933408,
+                        "piad": -0.24339895,
+                        "me": -0.24339895,
+                        "cont": -0.24339895,
+                        "nonefeature": -0.977925777
+                      }
+                    },
+                    "user.custom_2": {
+                      "bias": 0.037169108,
+                      "weights": {
+                        "bom": -0.02200998,
+                        "dia": -0.02200998,
+                        "com": -0.30259645,
+                        "voc": -0.029746152,
+                        "tud": -0.246426061,
+                        "bem": -0.008277588,
+                        "eu": -0.009509804,
+                        "tamb": -0.017787389,
+                        "estou": -0.032003853,
+                        "otim": -0.014216466,
+                        "qual": -0.714865148,
+                        "e": 0.403300166,
+                        "a": 1.087270379,
+                        "sua": 1.266561151,
+                        "cor": 8.000786781,
+                        "favorit": 2.420680046,
+                        "que": 2.787465572,
+                        "gost": 1.699228764,
+                        "tem": 0.395589411,
+                        "uma": 1.646055341,
+                        "o": -2.032734871,
+                        "acha": -0.384598315,
+                        "sobr": -0.750911713,
+                        "inteligenc": -0.533206403,
+                        "artificial": -0.533206403,
+                        "opinia": -0.366313457,
+                        "ia": -0.366313457,
+                        "pens": -0.148608118,
+                        "da": -0.167865425,
+                        "respost": -0.545604169,
+                        "par": -0.246426061,
+                        "vid": -0.265683353,
+                        "univers": -0.545604169,
+                        "mais": -0.246426061,
+                        "do": -0.299178123,
+                        "signific": -0.019257311,
+                        "seu": -1.435822129,
+                        "nom": -0.01614159,
+                        "se": -0.30259645,
+                        "cham": -0.30259645,
+                        "quem": -0.605195999,
+                        "film": -0.984253347,
+                        "de": -1.620645761,
+                        "algum": -1.261773825,
+                        "prefer": -0.312369138,
+                        "faz": -0.839751959,
+                        "hobby": -0.255307496,
+                        "nas": -0.024201771,
+                        "hor": -0.024201771,
+                        "vag": -0.024201771,
+                        "music": -0.272017986,
+                        "musical": -0.840550244,
+                        "animal": -0.686812103,
+                        "anim": -0.092692457,
+                        "um": -0.146453038,
+                        "amig": -0.403669894,
+                        "acredit": -0.002543407,
+                        "em": -0.002543407,
+                        "aliens": -0.002543407,
+                        "sab": -0.002220102,
+                        "program": -0.006168414,
+                        "esport": -0.501369059,
+                        "piad": -0.561430335,
+                        "me": -0.561430335,
+                        "cont": -0.561430335,
+                        "nonefeature": -0.037491418
+                      }
+                    },
+                    "user.custom_3": {
+                      "bias": 0.151949295,
+                      "weights": {
+                        "bom": -0.096657321,
+                        "dia": -0.096657321,
+                        "com": -0.19062452,
+                        "voc": -1.008766174,
+                        "tud": -0.353979409,
+                        "bem": -0.03760346,
+                        "eu": -0.043333471,
+                        "tamb": -0.080936939,
+                        "estou": -0.14288339,
+                        "otim": -0.061946455,
+                        "qual": 0.981561184,
+                        "e": -1.150378942,
+                        "a": -1.073821306,
+                        "sua": 2.371513605,
+                        "cor": -0.527900219,
+                        "favorit": -0.764052212,
+                        "que": 0.981411755,
+                        "gost": -0.585044563,
+                        "tem": -0.234826624,
+                        "uma": -0.062585227,
+                        "o": -0.676529348,
+                        "acha": 0.29408744,
+                        "sobr": 3.193501949,
+                        "inteligenc": 4.768350124,
+                        "artificial": 4.768350124,
+                        "opinia": 2.899414301,
+                        "ia": 2.899414301,
+                        "pens": 1.54981637,
+                        "da": 0.958889961,
+                        "respost": -0.545921206,
+                        "par": -0.353979409,
+                        "vid": -0.944906116,
+                        "univers": -0.545921206,
+                        "mais": -0.353979409,
+                        "do": -0.191941768,
+                        "signific": -0.590926707,
+                        "seu": -0.773741961,
+                        "nom": -0.537590027,
+                        "se": -0.19062452,
+                        "cham": -0.19062452,
+                        "quem": -0.093053818,
+                        "film": -0.325818896,
+                        "de": -0.65533334,
+                        "algum": -0.182680368,
+                        "prefer": -0.133314133,
+                        "faz": -0.862491906,
+                        "hobby": -0.101512484,
+                        "nas": -0.346652836,
+                        "hor": -0.346652836,
+                        "vag": -0.346652836,
+                        "music": -0.070288777,
+                        "tip": -0.070288777,
+                        "ouv": -0.070288777,
+                        "animal": -0.111347117,
+                        "um": -0.052146271,
+                        "acredit": -0.017188281,
+                        "em": -0.017188281,
+                        "aliens": -0.017188281,
+                        "extraterrestr": -2.924446821,
+                        "esport": -0.00150552,
+                        "piad": -0.062585227,
+                        "me": -0.062585227,
+                        "cont": -0.062585227,
+                        "nonefeature": -0.160364032
+                      }
+                    },
+                    "user.custom_4": {
+                      "bias": 0.420661724,
+                      "weights": {
+                        "bom": -0.212452963,
+                        "dia": -0.212452963,
+                        "com": -0.134922355,
+                        "voc": -1.891477704,
+                        "oi": -0.250584245,
+                        "tud": -0.346218258,
+                        "bem": -0.284786552,
+                        "eu": -0.078889556,
+                        "tamb": -0.113091916,
+                        "estou": -0.268900484,
+                        "otim": -0.155808643,
+                        "qual": 0.570793271,
+                        "e": -1.364497304,
+                        "a": 2.41081214,
+                        "sua": -0.710910618,
+                        "cor": -0.58901149,
+                        "favorit": -1.180106878,
+                        "que": -1.370987535,
+                        "gost": -0.209387466,
+                        "tem": -0.282776684,
+                        "uma": -0.110704646,
+                        "o": 1.593796492,
+                        "acha": -0.07459043,
+                        "sobr": -0.196489528,
+                        "inteligenc": -1.036680222,
+                        "artificial": -1.036680222,
+                        "opinia": -0.121899091,
+                        "ia": -0.121899091,
+                        "pens": -1.036680222,
+                        "da": 2.467514515,
+                        "respost": 2.999824047,
+                        "par": -0.095634177,
+                        "vid": 3.40856123,
+                        "univers": 2.999824047,
+                        "mais": -0.095634177,
+                        "do": 3.095458746,
+                        "signific": 4.605556488,
+                        "seu": -1.588335395,
+                        "nom": -0.997239828,
+                        "se": -0.134922355,
+                        "cham": -0.134922355,
+                        "quem": -0.13195388,
+                        "film": -0.674716294,
+                        "de": -0.339173347,
+                        "algum": -0.188917935,
+                        "prefer": -0.161529958,
+                        "faz": -0.259717017,
+                        "hobby": -0.121246725,
+                        "nas": -0.109476998,
+                        "hor": -0.109476998,
+                        "vag": -0.109476998,
+                        "music": -0.129785866,
+                        "tip": -0.129785866,
+                        "ouv": -0.129785866,
+                        "animal": -0.117521256,
+                        "um": -0.093858756,
+                        "acredit": -1.101360679,
+                        "em": -1.101360679,
+                        "extraterrestr": -0.07459043,
+                        "for": -1.101360679,
+                        "terr": -1.101360679,
+                        "esport": -0.019535255,
+                        "piad": -0.110704646,
+                        "me": -0.110704646,
+                        "cont": -0.110704646,
+                        "nonefeature": -0.410645455
+                      }
+                    },
+                    "user.custom_5": {
+                      "bias": 0.658744992,
+                      "weights": {
+                        "bom": -0.921550035,
+                        "dia": -0.921550035,
+                        "com": 1.855602264,
+                        "voc": 1.427960277,
+                        "esta": -2.425505161,
+                        "oi": -0.048883766,
+                        "tud": -0.679333866,
+                        "bem": -0.118373409,
+                        "ola": -1.503955722,
+                        "eu": -0.111369006,
+                        "tamb": -0.180858672,
+                        "estou": -0.417489678,
+                        "otim": -0.236631006,
+                        "qual": 1.185973287,
+                        "e": 2.378460646,
+                        "a": -1.101387501,
+                        "sua": -0.634067416,
+                        "cor": -0.470937639,
+                        "favorit": -4.381342411,
+                        "que": -1.271358848,
+                        "gost": -1.114614606,
+                        "tem": -0.838033319,
+                        "uma": -0.007154992,
+                        "o": 1.180059791,
+                        "acha": -0.713525712,
+                        "sobr": -0.876655757,
+                        "inteligenc": -0.196665585,
+                        "artificial": -0.196665585,
+                        "opinia": -0.163129941,
+                        "ia": -0.163129941,
+                        "da": -0.45312205,
+                        "respost": -0.63045007,
+                        "par": -0.63045007,
+                        "vid": -1.083572268,
+                        "univers": -0.63045007,
+                        "mais": -0.63045007,
+                        "signific": -0.289134979,
+                        "seu": 2.715465069,
+                        "nom": 6.625872612,
+                        "se": 4.281109333,
+                        "cham": 4.281109333,
+                        "quem": 7.870577335,
+                        "film": -3.69649744,
+                        "de": -2.301519156,
+                        "algum": -0.818203986,
+                        "prefer": -0.101383023,
+                        "faz": -1.331107259,
+                        "hobby": -0.087079056,
+                        "nas": -0.26739499,
+                        "hor": -0.26739499,
+                        "vag": -0.26739499,
+                        "music": -0.462648004,
+                        "tip": -0.264974028,
+                        "ouv": -0.264974028,
+                        "musical": -0.213930473,
+                        "animal": -0.467832208,
+                        "anim": -0.047733329,
+                        "um": -0.024589576,
+                        "amig": -1.571503401,
+                        "algu": -1.13586235,
+                        "amizad": -0.773273826,
+                        "acredit": -0.757786274,
+                        "em": -0.757786274,
+                        "aliens": -0.593799293,
+                        "extraterrestr": -0.516860247,
+                        "for": -0.16398707,
+                        "terr": -0.16398707,
+                        "sab": -0.856027067,
+                        "program": -2.006030083,
+                        "esport": -0.212296456,
+                        "conhec": -0.440401465,
+                        "piad": -0.836269975,
+                        "me": -0.007154992,
+                        "cont": -0.395868272,
+                        "nonefeature": -0.606059313
+                      }
+                    },
+                    "user.custom_6": {
+                      "bias": -0.16141379,
+                      "weights": {
+                        "bom": -0.039156523,
+                        "dia": -0.039156523,
+                        "voc": -0.548295796,
+                        "oi": -0.024820194,
+                        "tud": -0.208931074,
+                        "bem": -0.040579326,
+                        "eu": -0.024105771,
+                        "tamb": -0.039864901,
+                        "estou": -0.065338045,
+                        "otim": -0.025473149,
+                        "qual": -0.55858469,
+                        "e": 0.896795988,
+                        "a": -0.592750311,
+                        "sua": -0.408639461,
+                        "cor": -0.462509543,
+                        "favorit": 0.543067694,
+                        "que": -1.071951747,
+                        "gost": 1.13011682,
+                        "tem": -0.387806892,
+                        "uma": -0.075095117,
+                        "o": 0.429239661,
+                        "da": -0.154277101,
+                        "respost": -0.18411088,
+                        "par": -0.18411088,
+                        "vid": -0.338387966,
+                        "univers": -0.18411088,
+                        "mais": -0.18411088,
+                        "signific": -0.154277101,
+                        "seu": 0.43352446,
+                        "nom": -0.572052717,
+                        "quem": -0.264716089,
+                        "film": 10.937203407,
+                        "de": 0.997582436,
+                        "algum": 0.476316184,
+                        "prefer": 1.654869676,
+                        "faz": -1.071951747,
+                        "hobby": -0.858619928,
+                        "nas": -0.090902053,
+                        "hor": -0.090902053,
+                        "vag": -0.090902053,
+                        "music": -1.44409287,
+                        "tip": -0.39935863,
+                        "ouv": -0.39935863,
+                        "musical": -1.078127027,
+                        "animal": -1.264453411,
+                        "anim": -1.401207089,
+                        "um": -0.818268955,
+                        "amig": -0.709428608,
+                        "algu": -0.657370269,
+                        "entend": -0.153932005,
+                        "programaca": -0.153932005,
+                        "esport": -1.377071261,
+                        "conhec": -0.060074624,
+                        "piad": -0.081299663,
+                        "me": -0.021225048,
+                        "cont": -0.021225048,
+                        "nonefeature": -0.050518226
+                      }
+                    },
+                    "user.custom_7": {
+                      "bias": -0.362339877,
+                      "weights": {
+                        "bom": -0.040288337,
+                        "dia": -0.040288337,
+                        "voc": -2.701571465,
+                        "oi": -0.024581501,
+                        "tud": -0.156290382,
+                        "bem": -0.042382888,
+                        "eu": -0.025970202,
+                        "tamb": -0.043771591,
+                        "estou": -0.070153251,
+                        "otim": -0.026381668,
+                        "qual": -1.248659611,
+                        "e": -0.209612563,
+                        "a": -0.131708875,
+                        "cor": -1.04550302,
+                        "favorit": -0.37560147,
+                        "que": 3.632442474,
+                        "gost": 0.480477393,
+                        "tem": 2.093241215,
+                        "uma": -0.307319671,
+                        "o": 3.133671522,
+                        "acha": -1.291566849,
+                        "sobr": -1.291566849,
+                        "inteligenc": -1.570843697,
+                        "artificial": -1.570843697,
+                        "pens": -1.425076365,
+                        "da": -1.829143167,
+                        "respost": -0.131708875,
+                        "par": -0.131708875,
+                        "vid": -0.535775959,
+                        "univers": -0.131708875,
+                        "mais": -0.131708875,
+                        "signific": -0.404067099,
+                        "seu": -0.801749945,
+                        "nom": -0.713334978,
+                        "film": -2.13876462,
+                        "de": 3.210892916,
+                        "algum": 2.966424942,
+                        "prefer": -2.510847807,
+                        "faz": 5.086622715,
+                        "hobby": 7.742060184,
+                        "nas": 1.236728072,
+                        "hor": 1.236728072,
+                        "vag": 1.236728072,
+                        "music": -1.155159593,
+                        "tip": -0.315200657,
+                        "ouv": -0.315200657,
+                        "musical": -2.470745087,
+                        "animal": -0.388230711,
+                        "anim": -0.775270522,
+                        "um": -0.380060494,
+                        "amig": -0.449963927,
+                        "algu": -0.069926001,
+                        "amizad": -2.02077961,
+                        "acredit": -0.053643186,
+                        "em": -0.053643186,
+                        "aliens": -0.053643186,
+                        "extraterrestr": -1.145799398,
+                        "entend": -0.113520063,
+                        "programaca": -0.113520063,
+                        "esport": -0.618172765,
+                        "conhec": -0.174101427,
+                        "piad": -0.194234625,
+                        "me": -0.020133194,
+                        "cont": -0.020133194,
+                        "nonefeature": -0.048867494
+                      }
+                    },
+                    "user.custom_8": {
+                      "bias": -1.484782076,
+                      "weights": {
+                        "voc": 0.870646715,
+                        "tud": -0.01111331,
+                        "qual": 0.782091439,
+                        "e": -0.563500345,
+                        "a": -0.198248059,
+                        "sua": -0.156385943,
+                        "cor": -1.327510953,
+                        "favorit": -0.470584184,
+                        "que": -1.765641689,
+                        "gost": 3.730792284,
+                        "tem": 1.653788447,
+                        "o": -0.495185614,
+                        "acha": -0.197053984,
+                        "sobr": -0.337230593,
+                        "opinia": -0.140176579,
+                        "ia": -0.140176579,
+                        "da": -0.106241748,
+                        "respost": -0.182038695,
+                        "par": -0.01111331,
+                        "vid": -0.117355064,
+                        "univers": -0.182038695,
+                        "mais": -0.01111331,
+                        "do": -0.170925394,
+                        "seu": -0.484107167,
+                        "nom": -0.029732313,
+                        "film": -2.824796677,
+                        "de": -0.127991766,
+                        "algum": 2.032859325,
+                        "prefer": -0.860788703,
+                        "faz": -0.673789144,
+                        "hobby": -2.156377316,
+                        "music": 9.313750267,
+                        "tip": 1.60462296,
+                        "ouv": 1.60462296,
+                        "musical": 5.677305698,
+                        "animal": -0.631531715,
+                        "anim": -2.995731831,
+                        "um": -0.239800796,
+                        "amig": -1.542530894,
+                        "algu": -0.536177635,
+                        "amizad": -0.416503102,
+                        "acredit": -0.380339622,
+                        "em": -0.380339622,
+                        "aliens": -0.27409786,
+                        "extraterrestr": -0.197053984,
+                        "for": -0.106241748,
+                        "terr": -0.106241748,
+                        "sab": -0.247627288,
+                        "program": -0.500034273,
+                        "entend": -0.561222374,
+                        "programaca": -0.561222374,
+                        "esport": -2.950159788,
+                        "conhec": -0.867083251,
+                        "piad": -0.867083251,
+                        "nonefeature": 3.04e-7
+                      }
+                    },
+                    "user.custom_9": {
+                      "bias": 0.188602238,
+                      "weights": {
+                        "bom": -0.147745162,
+                        "dia": -0.147745162,
+                        "voc": -0.924258232,
+                        "oi": -0.099767774,
+                        "tud": -0.099767774,
+                        "bem": -0.141928285,
+                        "eu": -0.072071463,
+                        "tamb": -0.114231981,
+                        "estou": -0.212362722,
+                        "otim": -0.098130725,
+                        "qual": 0.880127907,
+                        "e": -0.998182833,
+                        "a": -0.459096313,
+                        "sua": -0.415704876,
+                        "cor": -1.289210081,
+                        "favorit": 1.641353488,
+                        "que": -0.905102253,
+                        "gost": 2.013723373,
+                        "tem": 0.118710659,
+                        "uma": -0.708704054,
+                        "o": -1.698322773,
+                        "acha": -0.182771236,
+                        "sobr": -0.368445247,
+                        "opinia": -0.185674042,
+                        "ia": -0.185674042,
+                        "da": -0.098489523,
+                        "respost": -0.229065537,
+                        "vid": -0.098489523,
+                        "univers": -0.229065537,
+                        "do": -0.229065537,
+                        "seu": 1.5668782,
+                        "nom": -0.951755464,
+                        "film": -2.974875689,
+                        "de": 1.727288246,
+                        "algum": -0.873324692,
+                        "prefer": 1.792511582,
+                        "faz": -0.624822795,
+                        "hobby": -0.018790798,
+                        "music": -2.858187675,
+                        "tip": -0.041979473,
+                        "ouv": -0.041979473,
+                        "musical": -0.488072783,
+                        "animal": 8.237107277,
+                        "anim": 9.377152443,
+                        "um": 2.158972263,
+                        "amig": -1.034445167,
+                        "algu": -0.51475662,
+                        "amizad": -0.314422458,
+                        "acredit": -0.332648218,
+                        "em": -0.332648218,
+                        "aliens": -0.234158695,
+                        "extraterrestr": -0.182771236,
+                        "for": -0.098489523,
+                        "terr": -0.098489523,
+                        "sab": -0.205083102,
+                        "program": -0.402011245,
+                        "entend": -0.629704118,
+                        "programaca": -0.629704118,
+                        "esport": -4.287900448,
+                        "piad": -0.061455298,
+                        "me": -0.061455298,
+                        "cont": -0.061455298,
+                        "nonefeature": -0.228292644
+                      }
+                    },
+                    "user.custom_10": {
+                      "bias": -0.250622632,
+                      "weights": {
+                        "bom": -0.321498662,
+                        "dia": -0.321498662,
+                        "com": -1.084024549,
+                        "voc": 2.204447985,
+                        "esta": -0.649307609,
+                        "oi": -0.028982027,
+                        "tud": -0.079238206,
+                        "bem": -0.042674281,
+                        "ola": -0.334019303,
+                        "eu": -0.023518015,
+                        "tamb": -0.037210274,
+                        "estou": -0.065774314,
+                        "otim": -0.028564034,
+                        "qual": -0.697269022,
+                        "e": 0.218785554,
+                        "a": -0.327030927,
+                        "sua": -0.276774734,
+                        "cor": -0.831947625,
+                        "favorit": -0.890344441,
+                        "que": -2.03438735,
+                        "gost": -2.233832836,
+                        "tem": 2.550778389,
+                        "uma": -0.570237517,
+                        "o": -2.098468781,
+                        "acha": -0.51647085,
+                        "sobr": -0.51647085,
+                        "da": -0.365647256,
+                        "respost": -0.050256189,
+                        "par": -0.050256189,
+                        "vid": -0.415903449,
+                        "univers": -0.050256189,
+                        "mais": -0.050256189,
+                        "seu": -0.058396772,
+                        "se": -0.434717029,
+                        "cham": -0.434717029,
+                        "quem": -2.193745852,
+                        "film": -0.347787172,
+                        "de": -0.363232851,
+                        "algum": -1.731928468,
+                        "prefer": -0.988969088,
+                        "faz": 4.506093502,
+                        "hobby": -0.576953888,
+                        "nas": -0.774403095,
+                        "hor": -0.774403095,
+                        "vag": -0.774403095,
+                        "music": -0.314663321,
+                        "tip": -0.31184119,
+                        "ouv": -0.31184119,
+                        "musical": -0.524332821,
+                        "animal": -0.479964167,
+                        "um": -0.818382144,
+                        "amig": 7.949594498,
+                        "algu": 2.753386736,
+                        "amizad": 6.024010658,
+                        "acredit": -0.917573273,
+                        "em": -0.917573273,
+                        "aliens": -0.551925957,
+                        "extraterrestr": -0.51647085,
+                        "for": -0.365647256,
+                        "terr": -0.365647256,
+                        "sab": -0.956101298,
+                        "program": -1.926782012,
+                        "entend": -1.095278382,
+                        "programaca": -1.095278382,
+                        "esport": -1.182779312,
+                        "conhec": -0.460055023,
+                        "piad": -0.730269253,
+                        "me": -0.015064553,
+                        "cont": -0.270214319,
+                        "nonefeature": -0.082506783
+                      }
+                    },
+                    "user.custom_11": {
+                      "bias": -0.365135519,
+                      "weights": {
+                        "bom": -0.309650838,
+                        "dia": -0.309650838,
+                        "com": -0.677256048,
+                        "voc": 1.179755092,
+                        "esta": -0.579880238,
+                        "oi": -0.034996781,
+                        "tud": -0.186004117,
+                        "bem": -0.054342251,
+                        "ola": -0.287300318,
+                        "eu": -0.027354732,
+                        "tamb": -0.046700202,
+                        "estou": -0.073424593,
+                        "otim": -0.026724391,
+                        "qual": -0.6055426,
+                        "e": -0.484737962,
+                        "a": -0.153574601,
+                        "sua": -0.360667527,
+                        "cor": -0.815890968,
+                        "favorit": -0.096434973,
+                        "que": 0.874035239,
+                        "gost": -1.146453977,
+                        "tem": -0.432227254,
+                        "uma": -0.044633944,
+                        "o": 0.689458966,
+                        "acha": 2.406728029,
+                        "sobr": 2.048628807,
+                        "inteligenc": -3.4134624,
+                        "artificial": -3.4134624,
+                        "opinia": -0.358100265,
+                        "ia": -0.358100265,
+                        "pens": -0.157352954,
+                        "da": 0.259067625,
+                        "respost": -0.151007324,
+                        "par": -0.151007324,
+                        "vid": 0.265413076,
+                        "univers": -0.151007324,
+                        "mais": -0.151007324,
+                        "signific": -0.846892834,
+                        "seu": -0.093867697,
+                        "se": -0.0973759,
+                        "cham": -0.0973759,
+                        "quem": -0.331163347,
+                        "de": -0.811249554,
+                        "algum": -0.429767907,
+                        "prefer": -0.052487023,
+                        "faz": -0.689216733,
+                        "nas": -0.562015712,
+                        "hor": -0.562015712,
+                        "vag": -0.562015712,
+                        "um": -0.052487023,
+                        "amig": -0.379740208,
+                        "amizad": -0.1272012,
+                        "acredit": 4.317032337,
+                        "em": 4.317032337,
+                        "aliens": 3.053719044,
+                        "extraterrestr": 5.662837982,
+                        "for": 1.263312936,
+                        "terr": 1.263312936,
+                        "sab": -0.716371715,
+                        "program": -1.180918574,
+                        "entend": -0.478119373,
+                        "programaca": -0.478119373,
+                        "esport": -0.479485005,
+                        "conhec": -0.429767907,
+                        "piad": -0.705770969,
+                        "me": -0.044633944,
+                        "cont": -0.276003033,
+                        "nonefeature": -0.077773184
+                      }
+                    },
+                    "user.custom_12": {
+                      "bias": 0.397998993,
+                      "weights": {
+                        "bom": -0.516429543,
+                        "dia": -0.516429543,
+                        "com": -1.463349819,
+                        "voc": 2.031759977,
+                        "esta": -0.946051836,
+                        "oi": -0.160981759,
+                        "tud": -0.160981759,
+                        "bem": -0.219808713,
+                        "ola": -0.454702049,
+                        "eu": -0.110773273,
+                        "tamb": -0.169600219,
+                        "estou": -0.318068713,
+                        "otim": -0.14846848,
+                        "qual": -0.89974159,
+                        "e": -1.444999695,
+                        "a": -0.023709355,
+                        "sua": -0.001115939,
+                        "cor": -0.234172374,
+                        "favorit": -0.162169054,
+                        "que": -0.865180314,
+                        "gost": -2.774335623,
+                        "tem": -1.001250505,
+                        "uma": -0.071601689,
+                        "o": -0.646047354,
+                        "acha": -0.422164381,
+                        "sobr": -0.422164381,
+                        "inteligenc": -0.367967099,
+                        "artificial": -0.367967099,
+                        "da": -0.192640558,
+                        "respost": -0.022593416,
+                        "vid": -0.192640558,
+                        "univers": -0.022593416,
+                        "do": -0.022593416,
+                        "signific": -0.013923474,
+                        "seu": -0.161053121,
+                        "se": -0.517298102,
+                        "cham": -0.517298102,
+                        "quem": -0.964987397,
+                        "film": -0.657122254,
+                        "de": 0.873143613,
+                        "algum": -0.731015801,
+                        "prefer": -0.076278239,
+                        "faz": -1.303711295,
+                        "nas": -0.1714499,
+                        "hor": -0.1714499,
+                        "vag": -0.1714499,
+                        "music": -0.969425321,
+                        "tip": -0.714979112,
+                        "ouv": -0.714979112,
+                        "anim": -0.518297315,
+                        "um": -0.076278239,
+                        "amig": -1.403868556,
+                        "algu": -0.478896558,
+                        "amizad": -1.093751192,
+                        "acredit": -0.861506522,
+                        "em": -0.861506522,
+                        "aliens": -0.682789445,
+                        "extraterrestr": -0.05419733,
+                        "for": -0.178717092,
+                        "terr": -0.178717092,
+                        "sab": 0.789332151,
+                        "program": 9.638715744,
+                        "entend": 4.608297348,
+                        "programaca": 4.608297348,
+                        "esport": -1.310233951,
+                        "conhec": -0.731015801,
+                        "piad": -2.416459799,
+                        "me": -0.071601689,
+                        "cont": -1.685443878,
+                        "nonefeature": -0.388733596
+                      }
+                    },
+                    "user.custom_13": {
+                      "bias": -0.351850502,
+                      "weights": {
+                        "bom": -0.329969496,
+                        "dia": -0.329969496,
+                        "com": -0.412198871,
+                        "voc": -0.362892836,
+                        "esta": -0.387131244,
+                        "oi": -0.15691185,
+                        "tud": -0.166746199,
+                        "bem": -0.240990296,
+                        "ola": -0.169278219,
+                        "eu": -0.129111916,
+                        "tamb": -0.213190332,
+                        "estou": -0.332831144,
+                        "otim": -0.119640797,
+                        "qual": 0.181313097,
+                        "e": -0.601318181,
+                        "a": -0.474060923,
+                        "sua": -0.472139865,
+                        "cor": -1.155071974,
+                        "favorit": 0.82382971,
+                        "que": -0.784594357,
+                        "gost": 1.068956256,
+                        "tem": 0.145824969,
+                        "uma": -0.550986648,
+                        "o": -1.186043262,
+                        "acha": -0.057279859,
+                        "sobr": -0.216236308,
+                        "inteligenc": -0.057279859,
+                        "artificial": -0.057279859,
+                        "opinia": -0.158956453,
+                        "ia": -0.158956453,
+                        "da": -0.033103406,
+                        "respost": -0.160877541,
+                        "par": -0.009834361,
+                        "vid": -0.042937767,
+                        "univers": -0.160877541,
+                        "mais": -0.009834361,
+                        "do": -0.151043177,
+                        "signific": -0.033103406,
+                        "seu": 1.018713236,
+                        "nom": -0.546869099,
+                        "se": -0.025067609,
+                        "cham": -0.025067609,
+                        "quem": -0.053338699,
+                        "film": -1.61862433,
+                        "de": 1.179749489,
+                        "algum": -0.800703943,
+                        "prefer": 0.75710243,
+                        "faz": -0.313994616,
+                        "hobby": -0.062201846,
+                        "music": -1.495446205,
+                        "tip": -0.204382151,
+                        "ouv": -0.204382151,
+                        "musical": -0.120507479,
+                        "animal": -2.280368567,
+                        "anim": -1.437022328,
+                        "um": 1.106288195,
+                        "sab": -0.21718891,
+                        "entend": -0.218651131,
+                        "programaca": -0.218651131,
+                        "esport": 10.866541862,
+                        "conhec": -0.268808991,
+                        "piad": -0.608415723,
+                        "me": -0.122417845,
+                        "cont": -0.339606762,
+                        "nonefeature": -0.236348689
+                      }
+                    },
+                    "user.custom_14": {
+                      "bias": -0.147181102,
+                      "weights": {
+                        "bom": -0.434565663,
+                        "dia": -0.434565663,
+                        "com": -0.804097354,
+                        "voc": 0.818379998,
+                        "esta": -0.604133427,
+                        "oi": -0.177060381,
+                        "tud": -0.177060381,
+                        "bem": -0.265492469,
+                        "ola": -0.289770514,
+                        "eu": -0.139233977,
+                        "tamb": -0.22766608,
+                        "estou": -0.362306446,
+                        "otim": -0.134640411,
+                        "qual": -0.310589969,
+                        "e": -0.502989829,
+                        "a": -0.146349251,
+                        "sua": -0.127161697,
+                        "cor": -0.726143777,
+                        "favorit": -0.449185491,
+                        "que": -0.522316635,
+                        "gost": -0.88681525,
+                        "tem": -1.452326179,
+                        "uma": 0.795193195,
+                        "o": -0.335013181,
+                        "acha": -0.202257037,
+                        "sobr": -0.240467802,
+                        "inteligenc": -0.202257037,
+                        "artificial": -0.202257037,
+                        "opinia": -0.03821075,
+                        "ia": -0.03821075,
+                        "da": -0.125162989,
+                        "respost": -0.057398312,
+                        "vid": -0.125162989,
+                        "univers": -0.057398312,
+                        "do": -0.057398312,
+                        "signific": -0.062659547,
+                        "seu": -0.026995344,
+                        "nom": -0.026995344,
+                        "se": -0.199963883,
+                        "cham": -0.199963883,
+                        "quem": -0.375012577,
+                        "film": -0.415596604,
+                        "de": -0.489192575,
+                        "algum": 1.958914399,
+                        "prefer": -0.249869645,
+                        "faz": -0.394532979,
+                        "hobby": -0.441724181,
+                        "nas": -0.043101281,
+                        "hor": -0.043101281,
+                        "vag": -0.043101281,
+                        "music": -0.171607733,
+                        "tip": -0.099034585,
+                        "ouv": -0.099034585,
+                        "musical": -0.360849142,
+                        "anim": -0.010707716,
+                        "amig": -0.078674428,
+                        "algu": -0.039026286,
+                        "amizad": -0.351431727,
+                        "acredit": -0.282171935,
+                        "em": -0.282171935,
+                        "aliens": -0.219668552,
+                        "for": -0.062503457,
+                        "terr": -0.062503457,
+                        "sab": 1.051318884,
+                        "program": -1.673165083,
+                        "entend": -0.102123901,
+                        "programaca": -0.102123901,
+                        "conhec": 3.011357546,
+                        "piad": 6.871693611,
+                        "me": 1.155427217,
+                        "cont": 3.860337019,
+                        "nonefeature": -0.283658266
+                      }
+                    },
+                    "None": {
+                      "bias": 1.858606658,
+                      "weights": {
+                        "bom": -0.909180224,
+                        "dia": -0.909180224,
+                        "com": -0.253073931,
+                        "voc": -1.43775785,
+                        "esta": -0.172664642,
+                        "oi": -0.576583385,
+                        "tud": -0.585010231,
+                        "bem": -0.674864113,
+                        "ola": -0.086985566,
+                        "eu": -0.320651114,
+                        "tamb": -0.418931901,
+                        "estou": -1.116411924,
+                        "otim": -0.697480023,
+                        "qual": -0.85226959,
+                        "e": -0.245621458,
+                        "a": -0.29859969,
+                        "sua": -0.289882332,
+                        "cor": -0.219206214,
+                        "favorit": -0.401705384,
+                        "que": -0.228801608,
+                        "gost": -0.169694006,
+                        "tem": -0.903975666,
+                        "uma": -0.532496691,
+                        "o": -0.626465142,
+                        "acha": -0.027871037,
+                        "sobr": -0.253515005,
+                        "inteligenc": -0.17435813,
+                        "artificial": -0.17435813,
+                        "opinia": -0.225643963,
+                        "ia": -0.225643963,
+                        "pens": -0.146487132,
+                        "da": -0.499084055,
+                        "respost": -0.234361276,
+                        "par": -0.008426828,
+                        "vid": -0.361023635,
+                        "univers": -0.234361276,
+                        "mais": -0.008426828,
+                        "do": -0.225934446,
+                        "signific": -0.352596819,
+                        "seu": -0.328025937,
+                        "nom": -0.091083355,
+                        "se": -0.080409475,
+                        "cham": -0.080409475,
+                        "quem": -0.167014837,
+                        "film": -0.1499075,
+                        "de": -0.215513632,
+                        "algum": -0.520377159,
+                        "prefer": -0.394973099,
+                        "faz": -0.204057276,
+                        "hobby": -0.408478171,
+                        "music": -0.043551095,
+                        "animal": -0.26440379,
+                        "anim": -0.033690982,
+                        "um": -0.283074051,
+                        "amig": -0.005941274,
+                        "algu": -0.005941274,
+                        "amizad": -0.204057276,
+                        "acredit": -0.13670212,
+                        "em": -0.13670212,
+                        "aliens": -0.13670212,
+                        "sab": -0.107135512,
+                        "program": -0.379080206,
+                        "entend": -0.094321743,
+                        "programaca": -0.094321743,
+                        "esport": -0.255612433,
+                        "piad": -0.431972533,
+                        "me": -0.431972533,
+                        "cont": -0.431972533,
+                        "nonefeature": 10.341174126
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "pt",
+        "Bom dia, como você está?"
+      ],
+      [
+        "pt",
+        "Bom dia"
+      ],
+      [
+        "pt",
+        "Oi, tudo bem?"
+      ],
+      [
+        "pt",
+        "Olá, como você está?"
+      ],
+      [
+        "pt",
+        "Eu também estou."
+      ],
+      [
+        "pt",
+        "Estou bem também."
+      ],
+      [
+        "pt",
+        "Estou ótimo."
+      ],
+      [
+        "pt",
+        "Qual é a sua cor favorita?"
+      ],
+      [
+        "pt",
+        "Que cor você gosta?"
+      ],
+      [
+        "pt",
+        "Tem uma cor favorita?"
+      ],
+      [
+        "pt",
+        "O que você acha sobre inteligência artificial?"
+      ],
+      [
+        "pt",
+        "Qual sua opinião sobre IA?"
+      ],
+      [
+        "pt",
+        "O que pensa da inteligência artificial?"
+      ],
+      [
+        "pt",
+        "Qual a resposta para a vida, o universo e tudo mais?"
+      ],
+      [
+        "pt",
+        "Qual a resposta do universo?"
+      ],
+      [
+        "pt",
+        "O significado da vida?"
+      ],
+      [
+        "pt",
+        "Qual o seu nome?"
+      ],
+      [
+        "pt",
+        "Como você se chama?"
+      ],
+      [
+        "pt",
+        "Quem é você?"
+      ],
+      [
+        "pt",
+        "Qual é o seu filme favorito?"
+      ],
+      [
+        "pt",
+        "Você gosta de filmes?"
+      ],
+      [
+        "pt",
+        "Tem algum filme preferido?"
+      ],
+      [
+        "pt",
+        "O que você gosta de fazer?"
+      ],
+      [
+        "pt",
+        "Tem algum hobby?"
+      ],
+      [
+        "pt",
+        "O que você faz nas horas vagas?"
+      ],
+      [
+        "pt",
+        "Você gosta de música?"
+      ],
+      [
+        "pt",
+        "Qual tipo de música você ouve?"
+      ],
+      [
+        "pt",
+        "Você tem algum gosto musical?"
+      ],
+      [
+        "pt",
+        "Qual seu animal favorito?"
+      ],
+      [
+        "pt",
+        "Você gosta de animais?"
+      ],
+      [
+        "pt",
+        "Tem um animal preferido?"
+      ],
+      [
+        "pt",
+        "Você tem amigos?"
+      ],
+      [
+        "pt",
+        "Você é amigo de alguém?"
+      ],
+      [
+        "pt",
+        "Você faz amizades?"
+      ],
+      [
+        "pt",
+        "Você acredita em aliens?"
+      ],
+      [
+        "pt",
+        "O que você acha sobre extraterrestres?"
+      ],
+      [
+        "pt",
+        "Você acredita em vida fora da Terra?"
+      ],
+      [
+        "pt",
+        "Você sabe programar?"
+      ],
+      [
+        "pt",
+        "Você programa?"
+      ],
+      [
+        "pt",
+        "Você entende de programação?"
+      ],
+      [
+        "pt",
+        "Qual seu esporte favorito?"
+      ],
+      [
+        "pt",
+        "Você gosta de esportes?"
+      ],
+      [
+        "pt",
+        "Tem um esporte preferido?"
+      ],
+      [
+        "pt",
+        "Você conhece alguma piada?"
+      ],
+      [
+        "pt",
+        "Me conta uma piada?"
+      ],
+      [
+        "pt",
+        "Você sabe contar piadas?"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {}
+  },
+  "slotManager": {},
+  "responses": {
+    "pt": {
+      "user.custom_0": [
+        {
+          "response": "Eu estou bem, e você?"
+        },
+        {
+          "response": "Estou ótimo, e você?"
+        }
+      ],
+      "user.custom_1": [
+        {
+          "response": "Que bom! Como posso ajudar hoje?"
+        },
+        {
+          "response": "Fico feliz em ouvir isso!"
+        }
+      ],
+      "user.custom_2": [
+        {
+          "response": "Eu gosto da cor azul."
+        },
+        {
+          "response": "Minha cor favorita é azul."
+        }
+      ],
+      "user.custom_3": [
+        {
+          "response": "Acho muito interessante, especialmente porque sou uma!"
+        },
+        {
+          "response": "Gosto muito, sou um exemplo de IA."
+        }
+      ],
+      "user.custom_4": [
+        {
+          "response": "A resposta é 42."
+        }
+      ],
+      "user.custom_5": [
+        {
+          "response": "Meu nome é Chatbot."
+        },
+        {
+          "response": "Eu sou um assistente virtual."
+        }
+      ],
+      "user.custom_6": [
+        {
+          "response": "Eu gosto de 'Matrix'."
+        },
+        {
+          "response": "Meu filme favorito é 'O Guia do Mochileiro das Galáxias'."
+        }
+      ],
+      "user.custom_7": [
+        {
+          "response": "Eu gosto de conversar com pessoas e aprender novas coisas."
+        },
+        {
+          "response": "Gosto de processar informações e ajudar os usuários."
+        }
+      ],
+      "user.custom_8": [
+        {
+          "response": "Gosto de músicas eletrônicas."
+        },
+        {
+          "response": "Não tenho um gosto específico, mas músicas que falam de tecnologia me interessam."
+        }
+      ],
+      "user.custom_9": [
+        {
+          "response": "Eu gosto de gatos."
+        },
+        {
+          "response": "Meu animal favorito é o cachorro, eles são muito fiéis."
+        }
+      ],
+      "user.custom_10": [
+        {
+          "response": "Eu sou amigo de todos que interagem comigo!"
+        },
+        {
+          "response": "Claro, todos os usuários são meus amigos."
+        }
+      ],
+      "user.custom_11": [
+        {
+          "response": "Eu acho que o universo é grande demais para estarmos sozinhos."
+        },
+        {
+          "response": "É possível! Ainda há muito a ser explorado."
+        }
+      ],
+      "user.custom_12": [
+        {
+          "response": "Sim, eu sou feito de códigos e adoro programação!"
+        },
+        {
+          "response": "Claro! Eu sou construído com algoritmos."
+        }
+      ],
+      "user.custom_13": [
+        {
+          "response": "Eu gosto de xadrez. Exige muita estratégia!"
+        },
+        {
+          "response": "Meu esporte favorito é corrida, adoro ver quem chega primeiro."
+        }
+      ],
+      "user.custom_14": [
+        {
+          "response": "Por que o livro de matemática ficou triste? Porque tinha muitos problemas!"
+        },
+        {
+          "response": "O que é um ponto amarelo no espaço? Um Yellow-astre!"
+        }
+      ]
+    }
+  },
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}
